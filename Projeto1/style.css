@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+h1{
+    font-family: 'Inter', 'sans-serif';
+    font-size: 49px;
+    line-height: 56px;
+    font-weight: normal;
+}
+
+h1 span {
+    font-weight: bold;
+}
+
+body{
+    font-family: 'Open Sans', 'sans-serif';
+    font-size: 14px;
+    line-height: 28px;
+
+}
+
+span{
+    color:#FF9900;
+}
+
+p{
+    color:#7D7987;
+}
+
+
+footer{
+    border-top: 10px; 
+    border-color: #ECEFF2;
+
+    
+}
+
+footer a {
+    color:#FF9900;
+
+}
