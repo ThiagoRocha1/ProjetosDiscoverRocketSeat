@@ -14,7 +14,7 @@ body {
   padding-top: 65px;
 }
 
-.nav {
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
