@@ -29,32 +29,100 @@
                     <div class="line-input">
                         <div class="input-wrapper">
                             <label for="nome">Nome</label>
-                            <input id="nome" type="text"/>
+                            <input id="nome" type="text" required/>
                         </div>
 
                         <div class="input-wrapper">
                             <label for="sobrenome">Sobrenome</label>
-                            <input id="sobrenome" type="text"/>
+                            <input id="sobrenome" type="text" required/>
                         </div>
                     </div>
 
                     <div class="input-wrapper">
                         <label for="email">Email <span>(digite um email válido)</span></label>
-                        <input id="email" type="email"/>
+                        <input id="email" type="email" required/>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="password">Senha <span>(mínimo de 6 caracteres)</span></label>
+                        <input id="password" 
+                        type="password"
+                        minlength="6"
+                        required/>
                     </div>
                     
                 </div>
             </fieldset>
+                
 
             <fieldset>
-
+                <div class="fieldset-wrapper">
+                    <legend>Informações do mentor</legend>
+                    
+                    
+                    <div class="input-wrapper">
+                        <label for="nomeMentor">Nome do seu mentor <span>(só o primeiro nome)</span></label>
+                        <input id="nomeMentor" type="text" required/>                       
+                </div>
             </fieldset>
-
+           
             <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend>Seus horários disponíveis</legend>
 
+                    <div class="col-3">
+                        <h2>Primeira Mentoria</h2>
+                        <div class="line-input">
+                            <div class="input-wrapper">
+                                <label for="data-1mentoria">Data <span>(DD/MM/AA)</span></label>
+                                <input id="data-1mentoria" type="date"/>
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for="inicio-1mentoria">Das</label>
+                                <input id="inicio-1mentoria" type="time"/>
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for="final-1mentoria">Até</label>
+                                <input id="final-1mentoria" type="time"/>
+                            </div>
+                            
+                        </div>
+
+                        <div class="col-3">
+                            <h2>Segunda</h2>
+                            <div class="line-input">
+                                <div class="input-wrapper">
+                                    <label for="data-1mentoria">Data <span>(DD/MM/AA)</span></label>
+                                    <input id="data-1mentoria" type="date"/>
+                                </div>
+    
+                                <div class="input-wrapper">
+                                    <label for="inicio-2mentoria">Das</label>
+                                    <input id="inicio-2mentoria" type="time"/>
+                                </div>
+    
+                                <div class="input-wrapper">
+                                    <label for="final-2mentoria">Até</label>
+                                    <input id="final-2mentoria" type="time"/>
+                                </div>
+                                
+                            </div>
+
+                    </div>
+                </div>
             </fieldset>
-
         </form>
+
+        <footer>
+            <button
+            form="metor-form"
+            
+            >
+                Salvar
+            </button>
+        </footer>
     </div>
     
     

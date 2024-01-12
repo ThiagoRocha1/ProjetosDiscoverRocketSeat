@@ -76,7 +76,7 @@ fieldset{
 
 }
 
-fieldset legend {
+.fieldset-wrapper legend {
     color: #535971;
     font-family: 'Staatliches';
     line-height: 34px;
@@ -128,4 +128,60 @@ fieldset legend {
     background: #FAFAFC;
 }
 
+.col-3{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 
+    width: 100%;
+}
+
+.col-3 h2{
+    color: #535971;
+    font-family: 'Staatliches';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34px;
+}
+
+#data-1mentoria, #data-2mentoria{
+    width: 300px;
+
+}
+
+footer{
+    content: '';
+    width: 750px;
+    height: 160px;
+    margin-bottom: 366px;
+    padding: 52px 71px;
+
+    border-radius: 0px 0px 20px 20px;
+    background: #535971;
+}
+
+footer button {
+    width: 608px;
+    height: 55px;
+    padding: 15px 40px;
+    border:0px;
+    border-radius: 20px;
+    background: #FF5374;
+
+    /*Text*/
+    color: #FFF;
+    font-family: 'Staatliches';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px
+
+}
+
+footer button:hover{
+    background: #fc345c;
+    cursor: pointer;
+}
+
+input:invalid{
+    border-color:red;
+}
