@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+
+    --color-blue-base: #065E7C;
+    --color-black-base:#202024;
+    --color-black-p:#121214;
+}
+
+body{
+    font-family: 'Mulish';
+    overflow-x: hidden;
+    text-overflow: clip ellipsis;
+}
+
+
+header{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top:0;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 2.6rem;
+
+    padding: 1.6rem 2.8rem;
+    background-color: var(--color-blue-base);
+}
+
+header form{
+    width: 100%;
+    max-width: 108rem;
+}
+
+header input{
+    width:100%;
+    max-width: 108rem;
+    padding: 1.2rem 1.4rem;
+    background: rgba(255, 255, 255, 0.20);
+    opacity: 90%;
+    border-radius: 4px;
+    border: none;
+
+    /*Text*/
+    font-family: 'Mulish';
+    font-size: clamp(1.1rem,1.3rem,1.6rem);
+    font-weight: 600;
+    line-height: 1.6rem;
+}
+
+header input::placeholder{
+    color: white;
+}
+
+main{
+    margin-bottom:3.2rem ;
+}
+
+main img#gato {
+    width: 100%;
+    max-width: 80rem;
+    overflow:hidden;
+    aspect-ratio: 16/9;
+
+    margin-bottom: 3rem;
+}
+
+.main-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2.2rem;
+    box-sizing: content-box;
+
+    color: var(--color-black-base);
+    font-family: 'Mulish';
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+
+
+.main-text h1,h2{
+    font-family: 'Mulish';
+    color: var(--color-black-base);
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 3.8rem;
+    
+    margin-bottom: 0.8rem;
+}
+
+.main-text p {
+    max-width: 38.2rem ;
+}
+
+
+.rating{
+    display: flex;
+    gap: 1.2rem;
+
+    margin-bottom:3rem;
+}
+
+div.rating div.classifier{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 100%;
+    width: 4rem ;
+    height: 4rem;
+    padding: 1.2rem;
+    cursor: pointer;
+    background: var(--color-blue-base);
+
+}
+
+div.rating div.classifier img{
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+
+    padding: 0 2.2rem;
+    margin-bottom: 3.9rem;
+}
+
+sidebar h2 {
+    margin-bottom: 3.2rem;
+}
+
+.gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    gap: 3.2rem;
+}
+
+.gallery figure{
+    display: flex;
+    align-items: flex-start;
+    gap: 1.6rem;
+
+    max-width: 38.2rem;
+    max-height: 10rem;
+
+    overflow: hidden;
+}
+
+.gallery figcaption{
+    display: flex;
+    flex-direction: column;
+}
+
+figcaption h3{
+    font-family: 'Mulish';
+    color: var(--color-black-base);
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.9rem;
+}
+
+figcaption p{  
+    color: var(--color-black-p);
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.4rem;
+}
+
+figure img{
+    border-radius: 0.5rem;
+    width:15rem;
+    height: 8rem;
+
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    padding: 1.6rem;
+    height: 6.4rem ;
+    background-color: var(--color-blue-base);
+}
+
+footer p {
+    color: #FFF;
+    font-family: 'Mulish';
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: normal;
+}
