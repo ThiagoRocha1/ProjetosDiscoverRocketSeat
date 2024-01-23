@@ -163,18 +163,13 @@ sidebar h2 {
     align-items: flex-start;
     gap: 1.6rem;
 
-<<<<<<< HEAD
     min-width: 25.9rem;
-=======
     
->>>>>>> af169b764c9f95d4a876f901c2342a48c19aa546
     max-height: 10rem;
     border-radius: 8px;
 
     overflow: hidden;
-<<<<<<< HEAD
     text-overflow: ellipsis;
-=======
     cursor: pointer;
 
 	animation: show 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
@@ -182,7 +177,6 @@ sidebar h2 {
 
     transition:ease-in-out;
     transition-duration: 0.2s;
->>>>>>> af169b764c9f95d4a876f901c2342a48c19aa546
 }
 
 .gallery figure:hover{
