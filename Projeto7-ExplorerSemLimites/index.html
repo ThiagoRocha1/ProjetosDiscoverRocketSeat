@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Explorer Sem Limites!</title>
+
+</head>
+<body>
+    <div id="app">
+        <main>
+            <img src="assets/astronout-desktop.svg" id="astronaut" alt="Imagem de um astronauta">
+            
+            <div class="text-wrapper">
+                <h1>Explore sem limites</h1>
+                <p>Porque o aprendizado é contínuo</p>
+                <a href="#gallery">
+                    <img src="./assets/arrow-down.svg" alt="Imagem de uma seta rosa apontada para baixo">
+                </a>
+            </div>
+        </main>
+
+        <div id="gallery">
+            <figure>
+                <img src="./assets/yellow-moon.png" alt="">
+                <figcaption>Não pare nunca</figcaption>
+                <p>Se você deseja ter sucesso nos estudos, é fundamental que você adote uma mentalidade de "não pare nunca". Estudar de forma consistente e contínua é a chave para o progresso e a conquista de seus objetivos.</p>
+            </figure>
+
+            <figure>
+                <img src="./assets/blue-moon.png" alt="">
+                <figcaption>Só volta</figcaption>
+                <p>Se você parou ou perdeu o ritmo em alguma atividade ou projeto, saiba que nunca é tarde para recomeçar. Às vezes, as circunstâncias podem mudar, ou podemos nos sentir desmotivados ou sobrecarregados.</p>
+            </figure>
+
+            <figure>
+                <img src="./assets/pink-moon.png" alt="">
+                <figcaption>Siga seu ritmo</figcaption>
+                <p>Avançar pouco a pouco mantém progresso constante em objetivos, evitando parar ou desistir. Mesmo pequenos passos nos aproximam do destino e motivam a continuidade. Não subestime o poder de cada ação rumo ao objetivo final.</p>
+            </figure>
+        </div>
+
+        <div class="form-wrapper">
+            <form>
+                <legend>Entre em contato</legend>
+                
+                <div class="input-wrapper">
+                    <label for="name">Seu nome</label>
+                    <img src="./assets/person.svg" alt="Imagem de uma pessoa em desenho">
+                    <input type="text" id="name" placeholder="Seu nome">
+                    </input>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="email">Email</label>
+                    <img src="./assets/@.svg" alt="Imagem de um arroba">
+                    <input type="email" id="email" placeholder="Email">    
+                </div>
+
+                <div class="textarea-wrapper">
+                    <label for="message">Escreva sua mensagem...</label>
+                    <textarea id="message" cols="10" rows="5" placeholder="Digite sua mensagem aqui..."></textarea>
+                </div>
+
+                <button>
+                    Enviar Mensagem
+                </button>
+            </form>
+            
+        </div>
+        
+
+        <footer>
+            <p>© 2023 - Rocketseat Explorer</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,351 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+
+:root{
+    font-size: 62.5%;
+
+    --color-neutral-white: #F9F4FB;
+    --color-purple:#312D64;
+    --color-pink:#B52184;
+    --color-total-white:#FFFF;
+}
+
+body{
+    font-family: 'Mulish';
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0 3.4rem 9.3rem 3.4rem;
+    background-color: var(--color-neutral-white);
+
+    overflow: hidden;
+}
+
+#astronaut{
+    max-width: 40rem;
+    max-height: 40rem;
+
+    object-fit: cover;
+    
+}
+
+main .text-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main #astronaut{
+    margin-bottom: 1.7rem;
+}
+
+.text-wrapper a {
+    transition: ease-in-out;
+    transition-duration: 0.2s;
+}
+
+.text-wrapper a:hover{
+    transform: scale(1.1);
+}
+
+main h1{
+    color: #B52184;
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+main p {
+    color: #312D64;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: normal;
+
+    margin-bottom: 3.5rem;
+}
+
+#gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    
+    background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+    padding: 5.3rem 3.9rem;
+}
+
+#gallery figure{
+    max-width: 36.6rem;
+    padding: 2.7rem;
+    height: fit-content;
+    border-radius: 2.4rem;
+
+    background-color: var(--color-total-white);
+
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+#gallery figure:hover{
+    transform: scale(1.1);
+    filter: contrast(150%);
+}
+
+#gallery img{
+    margin-bottom:3.3rem;
+}
+
+#gallery figcaption {
+    color: var(--color-pink);
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: normal;
+
+    margin-bottom: 1.8rem;
+}
+
+#gallery p {
+    color: var(--color-purple);
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.form-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--color-neutral-white);
+    padding: 7.8rem 4.3rem 7.5rem 4.3rem;
+}
+
+form legend{
+    color: var(--color-pink);
+    font-size: 3.2rem;
+    font-weight: 900;
+    line-height: normal;
+
+    margin-bottom: 4.3rem;
+}
+
+.input-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+
+    height: 4.8rem;
+    min-width: 11rem;
+    width: 100%;
+
+    margin-bottom: 2.4rem;
+}
+
+.input-wrapper label{
+    position: absolute;
+    z-index: 2;
+}
+
+.input-wrapper img {
+    position: absolute;
+    z-index: 1;
+    left:1.6rem;
+}
+
+.input-wrapper input{
+    min-width: 11rem;
+    width: 100%;
+
+    height: 4.8rem;
+
+    border: 1.5px solid var(--color-purple);
+    border-radius:1.6rem ;
+
+    padding: 1.2rem 1.4rem;
+    padding-left: 4.6rem;
+}
+
+.input-wrapper input:invalid{
+    border: 1px solid red;
+}
+
+.input-wrapper label{
+    opacity: 0%;
+}
+
+.textarea-wrapper{
+    height: fit-content;
+    width: 100%;
+
+}
+
+.textarea-wrapper textarea{
+    max-width: 40rem;
+    min-width: 11rem; 
+    width: 100%;
+
+    height: 14rem;
+    min-height: 14rem;
+    max-height: 20rem;
+
+    margin-bottom: 2.4rem;
+    
+    padding: 1.2rem 1.6rem 1.6rem 1.6rem;
+    border-radius: 1.6rem;
+    border: 1.5px solid var(--color-purple);
+}
+
+textarea::placeholder{
+    color: var(--color-purple);;
+
+    font-family: 'Mulish';
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 140%
+}
+
+.textarea-wrapper label{
+    position: absolute;
+    z-index: 2;
+    opacity: 0%;
+}
+
+
+.input-wrapper input::placeholder{
+    color: var(--color-purple);
+    font-family: 'Mulish';
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 100%
+}
+
+form button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width:fit-content ;
+    height: 4.5rem;
+    padding: 1.6rem;
+
+    border-radius: 1.6rem;
+    border: none;
+
+    background: linear-gradient(96deg, #413ea3 0%, #302C63 99.68%);
+    cursor: pointer;
+
+    color: var(--color-total-white);
+    font-family: 'Mulish';
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+}
+
+form button:hover{
+    background: linear-gradient(96deg, #413ea3 0%, #18153f 99.68%);
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+
+    background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+}
+
+footer p{
+    color: var(--color-total-white);
+    font-size: 1.9rem;
+    font-weight: 600;
+    line-height: normal;
+}
+
+@media(min-width:1000px){
+    main{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 4rem;
+    }
+
+    .text-wrapper{
+        order:1;
+        align-items: flex-start;
+    }
+    
+    .text-wrapper h1{
+        font-size: 5.9rem;
+    }
+
+    .text-wrapper p {
+        align-self: flex-start;
+        font-size: 3.2rem;
+        margin-bottom: 17.9rem;    
+    }
+
+    .text-wrapper a{
+        align-self: flex-start;
+        justify-self: flex-start;
+    }
+
+    .text-wrapper img{
+        width: 7rem;
+        height: 7rem;
+        
+    }
+    
+    main img#astronaut{
+        order:2;
+        max-width: none;
+        max-height: none;
+        margin: none;
+    }
+
+    #gallery{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #gallery figure{
+        padding: 3.2rem 1.3rem 7.2rem 3.2rem;
+        min-height:47.5rem;
+    }
+
+    .input-wrapper{
+        max-width: 59.2rem;
+    }
+    
+    .textarea-wrapper{
+        max-width: 59.2rem;        
+    }
+    
+    .textarea-wrapper textarea{
+        max-width: 59.2rem;        
+    }
+
+    .form-wrapper {
+        display: flex;
+        align-items: center;
+        padding: 9.5rem;        
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 100%;
+    }
+}

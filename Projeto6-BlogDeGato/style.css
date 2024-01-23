@@ -157,10 +157,11 @@ sidebar h2 {
     align-items: flex-start;
     gap: 1.6rem;
 
-    max-width: 38.2rem;
+    min-width: 25.9rem;
     max-height: 10rem;
 
     overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .gallery figcaption{
@@ -197,7 +198,7 @@ footer{
     align-items: center;
     justify-content: center;
 
-    width: 100%;
+    width: 100vw;
     padding: 1.6rem;
     height: 6.4rem ;
     background-color: var(--color-blue-base);
