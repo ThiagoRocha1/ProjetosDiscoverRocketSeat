@@ -1,0 +1,80 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    --color-white:white;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(90deg, #190361 0%, #B0F 100%);
+}
+
+.hide{
+    display: none;
+}
+
+main{
+    background-color:var(--color-white);
+    border-radius: .5rem;
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
+
+    box-sizing:content-box;
+    min-width: 20rem;
+    max-width: 42.8rem;
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+
+    @media(max-width: 480px){
+        box-sizing: content-box;
+        padding: 1rem 2rem 2rem 2rem;
+    }
+}
+
+/*Cokkie Open*/
+
+.closed{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1.75rem
+}
+
+h1{
+    color: #34355B;
+    font-family: 'Montserrat';
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+
+}
+
+h2{
+    color: #34355B;
+    font-family: 'DM Sans';
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+figure{
+    min-width: 18rem;
+    overflow: hidden;
+}
+
+figure img{
+    width: 100%;
+    height: auto;
+}
