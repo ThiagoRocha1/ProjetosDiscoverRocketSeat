@@ -1,11 +1,9 @@
-const buttonToggleMode = document.querySelector("#toggle-mode");
-const html = document.querySelector("html");
-let darkMode = true;
+let darkMode = true
+const buttonToggle = document.getElementById('toggle-mode')
 
-buttonToggleMode.addEventListener('click', (event)=>{
-    html.classList.toggle('light');
-    
-    const mode = darkMode ? 'light' : 'dark';
-    event.currentTarget.querySelector('span').textContent = `${mode} mode ativado!`;
+buttonToggle.addEventListener('click', (event) => {
+    document.documentElement.classList.toggle('light')
+    const mode = darkMode ? 'light' : 'dark'
+    event.currentTarget.querySelector('span').textContent = `${mode} mode ativado!`
     darkMode = !darkMode
 })
