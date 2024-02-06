@@ -3,10 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script type="module" src="./src/main.js" defer></script>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    
+    <title>Timer Pomodoro</title>
 </head>
 <body>
-    
+    <div id="app">
+        <section id="timer">
+            <div class="time">
+                <span id="minutes">25</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+            </div>
+
+            <div class="controls">
+                <button class="ph ph-play-circle">
+                    <span class="sr-only">play</span>
+                </button>
+                <button class="ph ph-pause-circle">
+                    <span class="sr-only">stop</span>
+                </button>
+                <button class="ph ph-plus-circle">
+                    <span class="sr-only">aumentar tempo</span>
+                </button>
+                <button class="ph ph-minus-circle">
+                    <span class="sr-only">diminuir tempo</span>
+                </button>
+            </div>
+        </section>
+
+        <section id="sons">
+            <div class="sons-wrapper" id="nature">
+                <i class="ph ph-tree"></i>
+                <span class="sr-only">som de natureza</span>
+            </div>
+            <div class="sons-wrapper" id="rain">
+                <i class="ph ph-cloud-rain"></i>
+                <span class="sr-only"> som de chuva</span>
+            </div>
+            <div class="sons-wrapper" id="market">
+                <i class="ph ph-storefront"></i>
+                <span class="sr-only">som de comercio</span>
+            </div>
+            <div class="sons-wrapper" id="camp-fire">
+                <i class="ph ph-flame"></i>
+                <span class="sr-only">som de lareira</span>
+            </div>
+        </section>
+    </div>
 </body>
 </html>

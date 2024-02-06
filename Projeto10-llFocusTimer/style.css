@@ -6,4 +6,106 @@
 
 :root{
     font-size: 62.5%;
+    --color-main-black:#323238;
+    --color-main-alternative-white:#FFFFFF;
+    --color-div-selected-blue:#02799D;
+    --color-div-background-grey:#E1E1E6;
+}
+
+body{
+    height:100vh;
+}
+
+#app{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 19.2rem;
+
+    height: 100%;
+}
+
+.sr-only {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+    margin: -1px;
+    padding: 0px;
+    border: 0;
+    appearance: none;
+}
+
+
+
+/*Aplication*/
+.time{
+    font-family:'Roboto', sans-serif;
+    font-size: 12.6rem;
+    color: var(--color-main-black);
+    font-weight: medium;
+    font-weight: 500;
+}
+
+.controls{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+}
+
+.controls button{
+    background: none;
+    border: none;
+
+    color: var(--color-main-black);
+    font-size: 4.8rem;
+    cursor: pointer;
+
+    transition: .2s ease-in-out;
+}
+
+.controls button:hover{
+    color: var(--color-div-selected-blue);
+}
+
+/* Selected control */
+.selected-control{
+    color: var(--color-div-selected-blue);    
+}
+
+#sons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 3.2rem;
+}
+
+.sons-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:var(--color-div-background-grey);
+    color: var(--color-main-black);
+    box-sizing: content-box;
+    padding: 4.8rem 4.3rem;
+    font-size: 5.6rem; 
+    border-radius: 2.4rem;
+
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.sons-wrapper:hover{
+    background:var(--color-div-selected-blue);
+    color: var(--color-main-alternative-white);
+}
+
+/* Selected Box */
+.selected-box{
+    background:var(--color-div-selected-blue);
+    color: var(--color-main-alternative-white);
 }
