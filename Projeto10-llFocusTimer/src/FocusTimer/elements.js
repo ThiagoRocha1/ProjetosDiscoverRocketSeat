@@ -4,9 +4,9 @@ export const natureSound = document.querySelector("#nature")
 
 export const rainSound = document.querySelector("#rain")
 
-export const marketSound = document.querySelector("#market")
+export const cafeteriaSound = document.querySelector("#cafeteria")
 
-export const campFireSound = document.querySelector("#camp-fire")
+export const campfireSound = document.querySelector("#camp-fire")
 
 export const minutes = document.querySelector("#minutes")
 
