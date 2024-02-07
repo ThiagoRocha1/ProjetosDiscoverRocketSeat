@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,16 +25,20 @@
             </div>
 
             <div class="controls">
-                <button class="ph ph-play-circle">
+                <button class="ph ph-play-circle"
+                data-action="startCountdown">
                     <span class="sr-only">play</span>
                 </button>
-                <button class="ph ph-pause-circle">
+                <button class="ph ph-pause-circle"
+                data-action="stopCountdown">
                     <span class="sr-only">stop</span>
                 </button>
-                <button class="ph ph-plus-circle">
+                <button class="ph ph-plus-circle"
+                data-action="increaseTime">
                     <span class="sr-only">aumentar tempo</span>
                 </button>
-                <button class="ph ph-minus-circle">
+                <button class="ph ph-minus-circle"
+                data-action="decreaseTime">
                     <span class="sr-only">diminuir tempo</span>
                 </button>
             </div>
