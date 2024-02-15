@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <style>
+        #app{
+            margin-inline:auto;
+            margin-top:28vh;
+    
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap:2.4rem;
+        }
+    
+        h1{
+            font-size:6rem;
+            color:#E1E1E6;
+        }
+    
+        button{
+            padding:1.2rem 3.2rem;
+    
+            background: none;
+            border: .2rem solid white;
+            border-radius: .5rem;
+            
+            color:white;
+            text-transform: uppercase;
+            font-size: 1.6rem;
+            
+            cursor: pointer;
+            transition: .3s ease-in-out;
+        }
+    
+        button:hover{
+            transform:scale(105%);
+            background-color: white;
+            color:#02799D;
+        }
+    </style>
+</head>
+<body>
+    <h1>Explore o universo</h1>
+
+    <button id="saberMais">quero saber mais</button>
+
+    <script>
+        document.querySelector("#saberMais").addEventListener('click',(event)=>{
+            event.preventDefault();
+            window.location.href = 'http://localhost:3000/Universe';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    }
+    
+:root{
+    font-size: 62.5%;
+    --text-color-white:#FFFFFF;
+    --text-color-not-selected:#C4C4CC;
+}
+
+body,button,input,a{
+    font-family: 'Roboto';
+    color:var(--text-color-white);
+}
+
+body{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: 100vh;
+}
+
+#menu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3.2rem;
+
+    width: 100%vw;
+    padding: 4rem 0 4rem 7.2rem;
+}
+
+nav{
+    display: flex;
+    gap:3.2rem;
+}
+
+.selected-route{
+    color:var(--text-color-white)
+}
+nav a{
+
+    color:var(--text-color-not-selected);
+    text-decoration: none;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.1rem;
+}
