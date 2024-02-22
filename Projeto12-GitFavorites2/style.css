@@ -1,0 +1,133 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    --bg-color:#000000;
+    --bg-color-green-gray:#06181C;
+    --bg-blue:#065E7C;
+    --bg-header:#092D38;
+    --bg-row-even:#4A808C;
+    --bg-color-alternative-hover:#FFFFFF;
+    --color-font-grey:#E1E1E6;
+}
+
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+body *{
+    font-family: 'Roboto';
+}
+
+#app{
+    padding: 2rem;
+    max-width: 112rem;
+
+    margin:11.5rem auto 11.6rem auto;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:.8rem;
+
+    margin-bottom: 8.8rem;
+}
+
+#search{
+    display: flex;
+    gap:.8rem;
+}
+
+#search input{
+    width: 46.2rem;
+    padding: 1rem;
+    border: none;
+    border-radius: .5rem;
+
+    background-color: var(--bg-color-green-gray);
+
+    font-size: 1.6rem;
+    color:var(--bg-color-alternative-hover);
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:.8rem;
+
+    padding: 1.2rem 3rem;
+    border-radius: .5rem;
+    border: none;
+
+    background-color: var(--bg-blue);
+
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height:2.4rem;
+    text-transform: uppercase;
+    color:var(--bg-color-alternative-hover);
+
+    cursor: pointer;
+    
+    transition: .2s ease-in-out;
+}
+
+button:hover{
+    background-color: var(--bg-color-alternative-hover);
+    color:var(--bg-blue);
+}
+
+button:hover img{
+    fill:#065E7C
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table * {
+    font-weight: '700';
+    line-height: 3.2rem;
+    font-size: 1.8rem;
+    color:var(--color-font-grey);
+}
+
+thead tr{
+    width: 100%;
+    background-color: var(--bg-header);
+    border: 1px solid var(--bg-row-even);
+    border-radius: .5rem;
+}
+
+thead th{
+    padding: 1.6rem 4rem;
+    text-align: left;
+}
+
+thead th:first-child{
+    border-radius: .4rem 0 0 0;
+}
+
+thead th:last-child{
+    border-radius: 0 .4rem 0 0;
+}
