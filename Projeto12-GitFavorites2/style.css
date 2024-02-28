@@ -98,9 +98,6 @@ button:hover{
     color:var(--bg-blue);
 }
 
-button:hover img{
-    fill:#065E7C
-}
 
 table{
     width: 100%;
